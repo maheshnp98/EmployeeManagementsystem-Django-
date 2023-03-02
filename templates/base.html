@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+{% load static %} 
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Employee Management System </title>   
+    <link rel="stylesheet" href=" {% static './css/bootstrap.css' %}" >  
+
+</head>  
+<body> 
+
+   <div class="container alert alert-dark mt-5">
+   <h2 class="text-center alert alert-danger"> Employee management system </h2>
+   {% block content %}    {% endblock content %}
+    
+   </div>
+ 
+
+    <script src="{% static './js/jquery.min.js' %}"></script>
+    <script src="{% static './js/popper.min.js' %}"></script>
+    <script src="{% static './js/bootstrap.bundle.js' %}"></script> 
+</body>
+</html>
